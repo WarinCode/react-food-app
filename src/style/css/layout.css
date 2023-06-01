@@ -1,0 +1,69 @@
+.social-media {
+  height: 7vh;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #262a31;
+}
+.social-media .icon {
+  font-size: 27px;
+  margin-inline: 9px;
+}
+.social-media #icon-customize {
+  font-size: 25px;
+}
+
+.btn-group a {
+  position: fixed;
+  bottom: 2%;
+  right: 1%;
+  z-index: 1;
+}
+.btn-group a .btn-top {
+  background: none;
+  color: #149eca;
+  font-size: 50px;
+}
+.btn-group a .btn-top:active {
+  color: #146580;
+}
+
+/* responesive -mobile(320px - 420px) */
+@media screen and (320px <= width <= 420px) {
+  .social-media {
+    height: 7vh;
+  }
+  .social-media .icon {
+    font-size: 23px;
+    margin-inline: 7px;
+  }
+  .social-media #icon-customize {
+    font-size: 23px;
+  }
+  .btn-group a .btn-top {
+    font-size: 38px;
+  }
+}
+/* responesive - mobile(421px - 520px)*/
+@media screen and (421px <= width <= 520px) {
+  .social-media .icon {
+    font-size: 26px;
+    margin-inline: 7px;
+  }
+  .btn-group a .btn-top {
+    font-size: 42px;
+  }
+}
+/* responesive - mobile | tablet(521px - 650px)*/
+@media screen and (521px <= width <= 650px) {
+  .social-media .icon {
+    font-size: 28px;
+    margin-inline: 7px;
+  }
+  .btn-group a .btn-top {
+    font-size: 46px;
+  }
+}
+
+/*# sourceMappingURL=layout.css.map */

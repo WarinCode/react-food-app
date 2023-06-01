@@ -1,0 +1,57 @@
+// color
+$footercolor: #232730;
+$footercolor2: #282d35;
+$whitecolor: rgb(249, 250, 252);
+$basecolor: #149eca;
+
+// component Footer.jsx
+.footer {
+    width: 100%;
+    height: 11vh;
+    max-height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    background-color: $footercolor;
+    .footer-box {
+        align-self: center;
+        margin: auto;
+        padding: 17px 15px;
+        height: 4rem;
+        .footer-copyright {
+            color: $whitecolor;
+            letter-spacing: 1.1px;
+            cursor: default;
+            font-size: 24px;
+            font-weight: bolder;
+            transition: all 0.4s ease;
+            &:hover {
+                color: $basecolor;
+            }
+        }
+    }
+}
+
+/* responesive -mobile(320px - 420px) */
+@media screen and (320px <= width <= 420px) {
+    .footer .footer-box .footer-copyright {
+        font-size: 19px;
+    }
+}
+
+/* responesive - mobile(421px - 520px)*/
+@media screen and (421px <= width <= 520px){
+    .footer .footer-box .footer-copyright {
+        font-size: 21px;
+    }
+}
+
+/* responesive - mobile | tablet(521px - 650px)*/
+@media screen and (521px <= width <= 650px) {
+    .footer .footer-box .footer-copyright {
+        font-size: 23px;
+    }
+} 

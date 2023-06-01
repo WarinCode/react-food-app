@@ -1,0 +1,77 @@
+.navbar {
+  display: flex;
+  text-align: start;
+  align-items: center;
+  width: 100%;
+  height: 12.4vh;
+  max-height: 15vh;
+  background: #232730;
+  padding: 25px 40px;
+  margin-bottom: 2rem;
+  cursor: default;
+}
+.navbar .nav-logo {
+  margin: 0 6pt;
+}
+.navbar .nav-logo img {
+  transition: all 0.3s;
+  animation: rotateLogo 20s infinite linear;
+  animation-duration: 9s;
+  width: 45px;
+  height: 45px;
+}
+.navbar .nav-logo img:hover {
+  filter: drop-shadow(0px 0px 14px #149eca) saturate(1.9);
+}
+.navbar .nav-title {
+  margin-inline: 2.5pt;
+  color: rgb(249, 250, 252);
+  transition: all 0.4s ease;
+}
+.navbar .nav-title h1 {
+  font-size: 30px;
+  letter-spacing: 1.1px;
+}
+.navbar .nav-title:hover {
+  color: #149eca;
+}
+
+@keyframes rotateLogo {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* responesive - mobile(320px - 420px)*/
+@media screen and (320px <= width <= 420px) {
+  .navbar {
+    justify-content: center;
+    width: 100%;
+  }
+  .navbar .nav-logo {
+    margin: 0 5pt;
+  }
+  .navbar .nav-title {
+    margin-inline: 4pt;
+  }
+  .navbar .nav-title h1 {
+    font-size: 25px;
+  }
+}
+/* responesive - mobile | tablet (421px - 820px)*/
+@media screen and (421px <= width <= 820px) {
+  .navbar {
+    justify-content: center;
+    width: 100%;
+  }
+  .navbar .nav-logo {
+    margin: 0 5pt;
+  }
+  .navbar .nav-title {
+    margin-inline: 4pt;
+  }
+  .navbar .nav-title h1 {
+    font-size: 28px;
+  }
+}
+
+/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,37 @@
+// use all scss
+@use './content.scss';
+@use './navbar.scss';
+@use './footer.scss';
+@use './layout.scss';
+
+// google font
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Itim&display=swap');
+
+// all color
+$whitecolor: rgb(249, 250, 252);
+$whitecolor2: #EBEDF0;
+$basecolor: #149eca;
+$basecolor2: #149ECA;
+$bodycolor: #1C1E21;
+$body2color: #232730;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+body {
+    position: relative;
+    background: $bodycolor;
+    color: $whitecolor;
+    & ::selection{
+        background: $basecolor2;
+        color: $whitecolor2;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
